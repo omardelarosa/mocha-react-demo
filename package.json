@@ -16,7 +16,7 @@
     "jsdom": "^7.0.2",
     "logfmt": "^1.2.0",
     "mocha": "^2.3.4",
-    "react": "^0.13.3",
+    "react": "~0.13",
     "webpack": "^1.12.6"
   },
   "devDependencies": {

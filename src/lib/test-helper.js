@@ -12,5 +12,8 @@ var doc = jsdom(
 global.window = doc.defaultView;
 global.document = window.document;
 global.navigator = window.navigator;
-global.React = require('react');
 global.$ = require('jquery');
+global.React = require('react/addons');
+
+// Fixes issue with React not recognizing JSDOM
+require('react/lib/ExecutionEnvironment').canUseDOM = true; 

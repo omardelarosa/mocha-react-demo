@@ -27,7 +27,7 @@ module.exports = React.createClass({
         <h1 ref='mainHeading'>My Widget</h1>
         <div>
           <input className='nameInput' onChange={ this.__handleChange } value={this.state.name} ref='nameInput'/>
-          <button className='addButton' onClick={ this.__handleClick }>Add your name</button>
+          <button className='addButton' ref='addButton' onClick={ this.__handleClick }>Add your name</button>
           <div ref='displayArea'>
             { this.state.displayedAreaText }
           </div>
