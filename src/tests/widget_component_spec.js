@@ -1,4 +1,5 @@
 var Widget = require('../components/widget.js');
+var expect = require('chai').expect;
 
 describe('WidgetComponent', function () {
 
@@ -15,8 +16,10 @@ describe('WidgetComponent', function () {
     
     });
 
-    it('should create a span element with some text', function () {
-      console.log("widgetComponent", widgetComponent);
+    it('should create an H1 with the text "My Widget"', function () {
+      var el = React.findDOMNode(widgetComponent.refs.mainHeading);
+      var text = el.innerHTML;
+      expect(text).to.eq('My Widget');
     });
 
   });
