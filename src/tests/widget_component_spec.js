@@ -22,6 +22,12 @@ describe('WidgetComponent', function () {
       expect(text).to.eq('My Widget');
     });
 
+    it('should update the text of the displayArea after click', function () {
+      var validName = 'Omar';
+      widgetComponent.setState({ name: validName });
+      expect(widgetComponent.state.name).to.eq(validName);
+    });
+
   });
 
 });
